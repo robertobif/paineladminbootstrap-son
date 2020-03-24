@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Painel School of Net</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <!--SIDEBAR-->
+        <div id="sidebar-wrapper">
+            <div class="sidebar-heading"><img src="img/logo.png" alt="" class=""><span>Painel da SON</span></div>
+            <div class="list-group border-right">
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-home"></i>Início</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-users"></i>Funcionários</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-box-open"></i>Produtos</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-sitemap"></i>Categorias</a>
+                <a href="#" class="list-group-item list-group-item-action"><i
+                        class="fas fa-people-carry"></i>Fornecedores</a>
+                <a href="#" class="list-group-item list-group-item-action"><i
+                        class="far fa-chart-bar"></i>Relatórios</a>
+            </div>
+
+        </div>
+
+        <!--CONTEUDO-->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light border" id="son-navbar">
+                <span id="menu-toggle" class="mr-auto"> <img src="img/logo.png" alt="" class="mx-auto d-block"> </span>
+                <a href="#" class="navbar-brand" id="navbar-site-title">Painel</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#son-navbar-collapse"
+                    aria-controls="son-navbar-collapse" aria-expanded="false" aria-label="Exibe toda navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="son-navbar-collapse">
+                    <form class="form-inline" id="navbar-search-form">
+                        <input type="text" class="form-control form-field .son-form-field" placeholder="Pesquisar"
+                            id="navbar-search-field">
+                    </form>
+                    <div id="navbar-profile" class="ml-auto">
+                        <img src="img/avatar.jpg" alt="">
+                        <span>Roberto Bif</span>
+                    </div>
+                </div>
+            </nav>
+            <div id="content" class="container">
+                <!--TABELA-->
+                <div class="table-title">
+                    <h3>Usuários</h3>
+                    <input type="text" class="form-control form-field .son-form-field" placeholder="Pesquisar">
+                </div>
+                <table class="table bg-white">
+                    <thead>
+                        <tr>
+                            <th class="table-col-title">#</th>
+                            <th class="table-col-title">NOME</th>
+                            <th class="table-col-title">SOBRENOME</th>
+                            <th class="table-col-title">USUÁRIO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Roberto</td>
+                            <td>Bif</td>
+                            <td>@robertobif</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Roberto</td>
+                            <td>Bif</td>
+                            <td>@robertobif</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Roberto</td>
+                            <td>Bif</td>
+                            <td>@robertobif</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Roberto</td>
+                            <td>Bif</td>
+                            <td>@robertobif</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Roberto</td>
+                            <td>Bif</td>
+                            <td>@robertobif</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Roberto</td>
+                            <td>Bif</td>
+                            <td>@robertobif</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Roberto</td>
+                            <td>Bif</td>
+                            <td>@robertobif</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Roberto</td>
+                            <td>Bif</td>
+                            <td>@robertobif</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--FORMULÁRIO-->
+                <h3 id="main-page-form-title" class="son-main-text3">Novo artigo</h3>
+                <div class="son-form">
+                    <form class="card son-form-body" action="">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>Autor</label>
+                                <input type="text" class="form-field son-form-field form-control" id="user-field"
+                                    placeholder="Autor">
+                                <hr>
+                            </div>
+                            <div class="form-group">
+                                <label>Título</label>
+                                <input type="text" class="form-field son-form-field form-control" id="title-field"
+                                    placeholder="Título">
+                                <hr>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Conteúdo</label>
+                                <textarea class="form-field son-form-field form-control" id="body-field"
+                                    placeholder="Texto Qualquer"></textarea>
+                                <hr>
+                            </div>
+                            <div class="form-group">
+                                <label>Data</label>
+                                <input type="date" class="form-field son-form-field form-control" id="title-field"
+                                    placeholder="Data">
+                            </div>
+                            <div class="card-footer">
+                                <div class="confirm-btns">
+                                    <button class="btn btn-primary">Criar e adicionar outro</button>
+                                    <button class="btn btn-primary">Publicar post</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <h3 id="vendas-h3">Vendas</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <canvas id="relatorio">
+
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="chart/Chart.min.js"></script>
+    <script>
+        var contexto = document.getElementById("relatorio").getContext('2d');
+        var grafico = new Chart(contexto, {
+            type: 'line',
+            data: {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'MAio', 'Junho', 'Julho'],
+                datasets: [{
+                    label: 'Vendas no ano',
+                    backgroundColor: "#5898d9ff",
+                    borderColor: "5898d9ff",
+                    data: [10, 5, 7, 18, 14, 20, 22]
+                }]
+            }
+        });
+    </script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $("#menu-toggle").click(function (e) {
+            event.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
